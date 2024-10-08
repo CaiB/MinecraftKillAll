@@ -27,7 +27,7 @@ public class VerbAllProcessor {
 			final String queryForLogging
 	) {
 		World world = sender.getEntityWorld();
-		final List<Entity> loadedEntityList = world.getLoadedEntityList();
+		final List<Entity> loadedEntityList = world.loadedEntityList;
 
 		final List<EntityLiving> livingEntities = EntityListUtil.getLivingEntities(loadedEntityList);
 		final List<EntityLiving> matchingEntities = EntityListUtil.getMatchingEntities(matcher, livingEntities);

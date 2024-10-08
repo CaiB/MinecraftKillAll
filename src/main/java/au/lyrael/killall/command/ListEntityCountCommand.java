@@ -53,7 +53,7 @@ public class ListEntityCountCommand implements ICommand {
 			);
 			LOGGER.info("Counting entities which match [{}]", String.join(",", args));
 
-			final List<Entity> loadedEntityList = world.getLoadedEntityList();
+			final List<Entity> loadedEntityList = world.loadedEntityList;
 			final List<EntityLiving> livingEntities = getLivingEntities(loadedEntityList);
 			final List<EntityLiving> matchingEntities = getMatchingEntities(entity -> matchByName(matchString, entity), livingEntities);
 
