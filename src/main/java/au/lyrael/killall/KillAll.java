@@ -25,7 +25,7 @@ import static au.lyrael.killall.KillAll.*;
 import static au.lyrael.killall.utility.MathUtility.asVec3;
 import static au.lyrael.killall.utility.MathUtility.scalarMultiply;
 
-@Mod(modid = MOD_ID, name = MOD_NAME, version = VERSION, acceptedMinecraftVersions = ACCEPTED_MC_VERSIONS)
+@Mod(modid = MOD_ID, name = MOD_NAME, version = VERSION, acceptedMinecraftVersions = ACCEPTED_MC_VERSIONS, acceptableRemoteVersions = "*")
 public class KillAll {
 
 	public static final String MOD_ID = "killall";
